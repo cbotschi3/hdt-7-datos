@@ -44,16 +44,16 @@ public class main {
 
     public static void main(String[] args) {
         try {
-            // Procesar archivo de diccionario
+            
             Map<String, String> dictionaryMap = processDictionaryFile("diccionario.txt");
 
-            // Mostrar diccionario
+            
             System.out.println("Diccionario:");
             for (Map.Entry<String, String> entry : dictionaryMap.entrySet()) {
                 System.out.println(entry.getKey() + " -> " + entry.getValue());
             }
 
-            // Traducir texto
+            
             String translatedText = translateText(dictionaryMap, "texto.txt");
             System.out.println("\nTexto traducido:");
             System.out.println(translatedText);
